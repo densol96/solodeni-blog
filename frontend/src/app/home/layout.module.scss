@@ -1,0 +1,21 @@
+.layout {
+  border: 1px solid green;
+  display: grid;
+  grid-template-columns: 24rem 1fr 35rem;
+  grid-gap: var(--gap-between);
+}
+
+.sidebar {
+  position: sticky;
+  top: 6.4rem;
+  align-self: flex-start;
+  border: 1px solid red;
+}
+
+.content {
+  border: 1px solid pink;
+}
+
+.news {
+  border: 1px solid yellow;
+}

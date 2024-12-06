@@ -1,0 +1,27 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: var(--font-text-l);
+  height: var(--btn-height-def);
+  padding: var(--padding-md);
+  border-radius: var(--border-radius-m);
+
+  &--solid {
+    color: var(--color-secondary);
+    border: 1px solid var(--color-secondary);
+
+    &:hover {
+      background-color: var(--color-secondary-dark);
+      color: var(--color-primary);
+    }
+  }
+
+  &--link {
+    &:hover {
+      text-decoration: underline;
+      color: var(--color-secondary);
+    }
+  }
+}

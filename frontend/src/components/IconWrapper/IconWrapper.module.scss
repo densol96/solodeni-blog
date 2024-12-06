@@ -1,0 +1,28 @@
+.linkIcon {
+  display: flex;
+  align-items: center;
+}
+
+.linkContainer {
+  height: 4.5rem;
+  width: 4.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+
+  .smallIcon {
+    height: 2.5rem;
+    width: 2.5rem;
+    transition: color var(--transition-duration-fast);
+  }
+
+  &:hover {
+    background-color: var(--color-secondary-light);
+    cursor: pointer;
+
+    .smallIcon {
+      color: var(--color-secondary-dark);
+    }
+  }
+}

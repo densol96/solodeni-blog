@@ -1,0 +1,133 @@
+:root {
+  --color-primary: #fff;
+  --color-secondary: rgb(59, 73, 223);
+  --color-secondary-dark: rgb(47, 58, 178);
+  --color-secondary-light: rgba(59, 73, 223, 0.171);
+  --color-secondary-lightest: rgba(59, 73, 223, 0.1); /* hover? */
+
+  --color-text-dark: rgb(36, 36, 36);
+  --color-text-default: rgb(23, 23, 23);
+  --color-text-light: rgb(87, 87, 87);
+
+  --color-grey--light: rgba(0, 0, 0, 0.15);
+  --color-grey--lightest: rgba(0, 0, 0, 0.1);
+
+  --light-shadow-color: 0 1px 1px rgba(0, 0, 0, 0.15);
+  --light-shadow-color-top: 0 -1px 1px rgba(0, 0, 0, 0.15);
+
+  --layout-padding: 1.6rem;
+
+  --padding-sm: 1rem;
+  --padding-md: 2rem;
+
+  --margin-xs: 1rem;
+  --margin-sm: 1.5rem;
+
+  --border-radius-sm: 3px;
+  --border-radius-m: 6px;
+
+  --letter-spacing-sm: 0.2rem;
+
+  --font-text-small: 1.5rem;
+  --font-text-default: 1.6rem;
+  --font-text-l: 1.8rem;
+
+  --btn-height-def: 4.2rem;
+
+  --gap-xs: 0.5rem;
+  --gap-sm: 1rem;
+  --gap-between: 3.2rem;
+  --gap-md: 7.2rem;
+
+  --transition-duration-default: 300ms;
+  --transition-duration-fast: 200ms;
+
+  &.dark {
+    /*  */
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* --background: #0a0a0a;
+    --foreground: #ededed; */
+  }
+}
+
+html,
+body {
+  font-size: 62.5%;
+  max-width: 100vw;
+  // overflow-x: hidden;
+  color-scheme: dark;
+}
+
+body {
+  line-height: 1.5;
+  font-size: var(--font-text-default);
+  color: var(--color-text-default);
+  background: var(--color-primary);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+.mb-xs {
+  margin-bottom: var(--margin-xs);
+}
+
+.mt-sm {
+  margin-top: var(--margin-sm);
+}
+
+.link {
+  &:hover {
+    text-decoration: underline;
+    color: var(--color-secondary);
+  }
+}
+
+.main:has(.not-found) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .not-found {
+    opacity: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    animation: fadeIn 1.5s ease-in-out forwards;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

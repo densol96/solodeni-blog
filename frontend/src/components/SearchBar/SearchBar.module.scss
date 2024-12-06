@@ -1,0 +1,42 @@
+.form {
+  color: var(--color-text-default);
+  position: relative;
+
+  .searchBar {
+    height: 100%;
+    color: inherit;
+    font-family: inherit;
+    font-size: var(--font-text-l);
+    border: 2.2px solid var(--color-grey--light);
+    background-color: #fff;
+    display: block;
+    border-radius: var(--border-radius-m);
+    padding-left: 5rem;
+
+    &:focus {
+      outline: 3px solid var(--color-secondary);
+    }
+  }
+
+  .button {
+    background: none;
+    border: none;
+    color: var(--color-text-default);
+
+    position: absolute;
+    height: 100%;
+    left: 0.5rem;
+
+    transition: color var(--transition-duration-default);
+
+    svg {
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+
+    &:hover {
+      color: var(--color-secondary);
+      cursor: pointer;
+    }
+  }
+}

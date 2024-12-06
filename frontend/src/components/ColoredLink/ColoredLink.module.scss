@@ -1,9 +1,19 @@
-.link {
+.light {
   font-size: inherit;
 
   transition: color var(--transition-duration-fast);
 
   &:hover {
     color: var(--color-secondary);
+  }
+}
+
+.dark {
+  font-size: inherit;
+
+  transition: color var(--transition-duration-fast);
+
+  &:hover {
+    color: var(--color-secondary-dark);
   }
 }

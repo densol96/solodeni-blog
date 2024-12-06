@@ -1,3 +1,4 @@
+// FILTER LINE COMPONENT
 .toggler {
   display: flex;
   justify-content: space-between;
@@ -7,23 +8,179 @@
   li {
     cursor: pointer;
   }
+
+  .options,
+  .variations {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .options {
+    font-size: 2rem;
+  }
+
+  .variations {
+    font-size: 1.8rem;
+  }
+
+  .active {
+    font-weight: 600;
+    color: var(--color-text-dark);
+  }
 }
 
-.options,
-.variations {
+// POSTS
+
+// POST
+.article {
+  border: 1px solid red;
+  padding: 2.5rem 4rem 2.5rem 4rem;
+  .tags {
+    display: inline-flex;
+    gap: 0.5rem;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-text-grey);
+
+    .footerLeft {
+      display: flex;
+      gap: var(--gap-md-minus);
+    }
+
+    .footerRight {
+      display: flex;
+      align-items: center;
+      gap: var(--gap-sm-plus);
+    }
+  }
+}
+
+// TAG
+.item {
+  padding: 0 0.7rem;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  font-size: 1.6rem;
+  transition: all 200ms;
+  cursor: pointer;
+
+  &Purple {
+    &:hover {
+      border-color: rgba(purple, 0.5);
+      background-color: rgba(purple, 0.1);
+    }
+
+    .hash {
+      color: purple;
+    }
+  }
+
+  &Yellow {
+    &:hover {
+      border-color: rgba(yellow, 0.5);
+      background-color: rgba(yellow, 0.1);
+    }
+
+    .hash {
+      color: yellow;
+    }
+  }
+
+  &Green {
+    &:hover {
+      border-color: rgba(green, 0.5);
+      background-color: rgba(green, 0.1);
+    }
+
+    .hash {
+      color: green;
+    }
+  }
+
+  &Grey {
+    &:hover {
+      border-color: rgba(grey, 0.5);
+      background-color: rgba(grey, 0.1);
+    }
+
+    .hash {
+      color: grey;
+    }
+  }
+
+  &Red {
+    &:hover {
+      border-color: rgba(red, 0.5);
+      background-color: rgba(red, 0.1);
+    }
+
+    .hash {
+      color: red;
+    }
+  }
+
+  &Brown {
+    &:hover {
+      border-color: rgba(brown, 0.5);
+      background-color: rgba(brown, 0.1);
+    }
+
+    .hash {
+      color: brown;
+    }
+  }
+
+  &Blue {
+    &:hover {
+      border-color: rgba(blue, 0.5);
+      background-color: rgba(blue, 0.1);
+    }
+
+    .hash {
+      color: blue;
+    }
+  }
+}
+
+// Icon
+
+.icon {
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+
+  &.bookmarkIcon {
+    &:hover {
+      color: var(--color-secondary);
+    }
+  }
+}
+
+.comments,
+.reactions {
   display: flex;
-  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-xs);
 }
 
-.options {
-  font-size: 2rem;
+.reactionIcons {
+  display: flex;
+  align-items: center;
+
+  .reactionIcon {
+    width: 3rem;
+    height: 3rem;
+
+    &:last-of-type {
+      margin-left: -1.5rem;
+    }
+  }
 }
 
-.variations {
-  font-size: 1.8rem;
-}
-
-.active {
-  font-weight: 600;
-  color: var(--color-text-dark);
+.dateTitle {
+  font-size: var(--font-text-xs);
 }

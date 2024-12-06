@@ -10,12 +10,12 @@ type Props = {
 const Page: React.FC<Props> = async ({ className, searchParams }) => {
   const { type, duration } = await searchParams;
   return (
-    <div className={className}>
+    <section className={className}>
       <LineToggler type={type as FilterType} duration={duration as DurationType} />
       <Suspense fallback="LOADING">
         <Posts />
       </Suspense>
-    </div>
+    </section>
   );
 };
 

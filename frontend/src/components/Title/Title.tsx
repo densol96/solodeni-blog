@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react";
 import styles from "./Title.module.scss";
+import clsx from "clsx";
 // const { title } = styles;
 
 type TitleSize = "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | "super";
@@ -23,5 +24,5 @@ export const Title: React.FC<Props> = ({ size = "sm", className, children }) => 
 
   const sizeStyle = styles[`title--${size}`];
 
-  return React.createElement(mapTagBySize[size], { className: `${sizeStyle} ${className || ""}` }, children);
+  return React.createElement(mapTagBySize[size], { className: clsx(sizeStyle, className) }, children);
 };

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.scss";
 
-import { roboto } from "@/lib/_fonts";
+import { roboto } from "@/lib/fonts";
 import { Header } from "../components/Header/Header";
 import { Footer } from "../components/Footer/Footer";
 

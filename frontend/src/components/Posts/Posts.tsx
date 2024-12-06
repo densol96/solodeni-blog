@@ -1,4 +1,5 @@
 import React from "react";
+import { Post } from "./Post";
 
 type Props = {
   className?: string;
@@ -6,5 +7,15 @@ type Props = {
 };
 
 export const Posts: React.FC<Props> = ({ className, children }) => {
-  return <div className={className}>Posts baby</div>;
+  return (
+    <ul className={className}>
+      <Post
+        post={{
+          reactions: 459,
+          commentsTotal: 34,
+          minRead: 6,
+        }}
+      />
+    </ul>
+  );
 };

@@ -1,5 +1,6 @@
 import { Container } from "@/components";
 import style from "./layout.module.scss";
+import { Sidebar } from "@/components/Siderbar/Sidebar";
 const { layout, sidebar, content, news } = style;
 
 export default function RootLayout({
@@ -9,31 +10,7 @@ export default function RootLayout({
 }>) {
   return (
     <Container className={layout}>
-      <nav className={sidebar}>
-        <ul>
-          <li>test</li>
-          <li>test</li>
-          <li>test</li>
-          <li>test</li>
-          <li>test</li>
-          <li>test</li>
-          <li>test</li>
-          <li>test</li>
-          <li>test</li>
-          <li>test</li>
-          <li>test</li>
-          <li>test</li>
-          <li>test</li>
-
-          <li>test</li>
-          <li>test</li>
-          <li>test</li>
-          <li>test</li>
-          <li>test</li>
-
-          <li>test</li>
-        </ul>
-      </nav>
+      <Sidebar className={sidebar} />
       <div className={content}>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, minus pariatur mollitia laboriosam debitis
@@ -2024,12 +2001,12 @@ export default function RootLayout({
           saepe facilis quidem nostrum, quae itaque commodi possimus ducimus et fugiat, praesentium quasi, autem
           delectus ratione doloremque minus reprehenderit omnis quas! Magnam ipsam dolores ipsa, est minima ea. Maiores
           neque expedita qui eos repudiandae quis consectetur ab, illum consequuntur laborum laboriosam deserunt, ut
-          excepturi! Dignissimos, sunt nam modi minus ex libero ipsa quaerat commodi eaque delectus earum iusto. Sequi
-          non sint aspernatur suscipit repellat saepe natus accusamus rerum molestiae, sapiente exercitationem tempora
-          consequuntur, quod voluptates id qui omnis voluptatem fugit, odio nihil. Corporis aspernatur veniam quisquam
-          dolore necessitatibus! Voluptas suscipit autem voluptatem, sit provident soluta ex est expedita, at sed vero
-          repellat nostrum necessitatibus, facilis laudantium? Ab quisquam adipisci quibusdam? Provident, culpa debitis
-          iste consequatur assumenda quaerat totam. Iure sequi animi temporibus nam quis officiis vitae, cumque
+          excepturi! Dignissimos, sunt nam modi minus ex libero ipsachildr quaerat commodi eaque delectus earum iusto.
+          Sequi non sint aspernatur suscipit repellat saepe natus accusamus rerum molestiae, sapiente exercitationem
+          tempora consequuntur, quod voluptates id qui omnis voluptatem fugit, odio nihil. Corporis aspernatur veniam
+          quisquam dolore necessitatibus! Voluptas suscipit autem voluptatem, sit provident soluta ex est expedita, at
+          sed vero repellat nostrum necessitatibus, facilis laudantium? Ab quisquam adipisci quibusdam? Provident, culpa
+          debitis iste consequatur assumenda quaerat totam. Iure sequi animi temporibus nam quis officiis vitae, cumque
           recusandae delectus, porro ipsam totam asperiores blanditiis ducimus accusamus saepe impedit. Iusto quidem
           rerum iure magni quas quam tenetur eveniet enim. Dolore quia harum neque at ut culpa cum? Esse asperiores
           expedita molestiae numquam a odit harum qui, nam doloribus possimus deserunt nihil minus facilis nemo, cum
@@ -2055,22 +2032,22 @@ export default function RootLayout({
           perspiciatis molestias, praesentium impedit laboriosam magni deserunt doloribus itaque. Esse voluptas pariatur
           molestiae suscipit officiis reiciendis fuga ipsa, atque illo neque ipsum fugiat, quisquam earum non quas. Id
           error consequatur unde amet voluptatem? Aspernatur veniam ipsam voluptatem! Repellendus, repellat? Cumque
-          harum excepturi voluptatum deserunt vero officiis, ex error cupiditate quaerat saepe ipsam dolore assumenda
-          iusto maxime quos mollitia adipisci quam rerum reprehenderit dicta labore. Provident vel quod possimus
-          officia. Aperiam magni iste quod inventore debitis commodi doloremque libero, ut eos perspiciatis voluptatem
-          totam pariatur aut eum, minima alias culpa repellat velit qui. Provident nisi aliquam quibusdam magni
-          laboriosam reprehenderit. Tempore non, dignissimos voluptatibus, perspiciatis dolorum voluptatem repellendus
-          quas ut quo officia dolor deserunt ea minus impedit, dicta quod natus! Ipsum voluptatum provident aspernatur
-          id, voluptate facilis soluta dicta reprehenderit. Mollitia sapiente, assumenda veniam repellat enim quo nulla
-          explicabo quidem provident ipsum eligendi quibusdam asperiores? Eos, ipsum officia recusandae accusamus
-          cupiditate autem neque voluptatum natus at ipsa, dolor, nostrum qui. Veniam doloribus, doloremque excepturi
-          vel recusandae labore cum minima voluptas dolores adipisci inventore eum, eligendi, porro nihil aspernatur
-          cumque? Neque a iure natus excepturi quae voluptate repudiandae cumque modi eaque. Accusamus quidem neque
-          laboriosam odio atque amet, iste accusantium repellendus asperiores tempora. Nulla non laborum eum voluptates
-          maxime. Molestiae, nulla distinctio veniam ipsum consequatur libero illum fugiat animi officiis neque. Saepe
-          optio delectus minima facere mollitia est debitis? Animi esse architecto quod, neque rerum ex eligendi
-          excepturi voluptate quibusdam mollitia suscipit error dolor corrupti nostrum! Quaerat natus ratione doloremque
-          consequuntur! Soluta reiciendis delectus natus aperiam suscipit saepe facilis quibusdam tenetur, at
+          harum excepturi voluptatum deserunt vero officiis, echildr error cupiditate quaerat saepe ipsam dolore
+          assumenda iusto maxime quos mollitia adipisci quam rerum reprehenderit dicta labore. Provident vel quod
+          possimus officia. Aperiam magni iste quod inventore debitis commodi doloremque libero, ut eos perspiciatis
+          voluptatem totam pariatur aut eum, minima alias culpa repellat velit qui. Provident nisi aliquam quibusdam
+          magni laboriosam reprehenderit. Tempore non, dignissimos voluptatibus, perspiciatis dolorum voluptatem
+          repellendus quas ut quo officia dolor deserunt ea minus impedit, dicta quod natus! Ipsum voluptatum provident
+          aspernatur id, voluptate facilis soluta dicta reprehenderit. Mollitia sapiente, assumenda veniam repellat enim
+          quo nulla explicabo quidem provident ipsum eligendi quibusdam asperiores? Eos, ipsum officia recusandae
+          accusamus cupiditate autem neque voluptatum natus at ipsa, dolor, nostrum qui. Veniam doloribus, doloremque
+          excepturi vel recusandae labore cum minima voluptas dolores adipisci inventore eum, eligendi, porro nihil
+          aspernatur cumque? Neque a iure natus excepturi quae voluptate repudiandae cumque modi eaque. Accusamus quidem
+          neque laboriosam odio atque amet, iste accusantium repellendus asperiores tempora. Nulla non laborum eum
+          voluptates maxime. Molestiae, nulla distinctio veniam ipsum consequatur libero illum fugiat animi officiis
+          neque. Saepe optio delectus minima facere mollitia est debitis? Animi esse architecto quod, neque rerum ex
+          eligendi excepturi voluptate quibusdam mollitia suscipit error dolor corrupti nostrum! Quaerat natus ratione
+          doloremque consequuntur! Soluta reiciendis delectus natus aperiam suscipit saepe facilis quibusdam tenetur, at
           consectetur dolorum non quasi debitis optio. Itaque molestias deserunt ipsam praesentium voluptatem sit vitae
           dolor explicabo? Porro, veniam illum. Quam debitis quis officiis temporibus aliquid, voluptates unde libero!
           Atque eum neque iusto debitis quos quae, minus error rem unde facilis nam dolor saepe. Laudantium sint animi

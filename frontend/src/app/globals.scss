@@ -18,7 +18,9 @@
   --layout-padding: 1.6rem;
 
   --padding-sm: 1rem;
+  --padding-sm-md: 1.5rem;
   --padding-md: 2rem;
+  // --padding-md-lg: 2.5rem;
 
   --margin-xs: 1rem;
   --margin-sm: 1.5rem;
@@ -74,6 +76,7 @@ body {
 
 .main {
   flex: 1;
+  padding: var(--padding-md) 0;
 }
 
 * {
@@ -85,6 +88,13 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 @media (prefers-color-scheme: dark) {

@@ -1,12 +1,14 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { LinkTo } from "./LinkTo";
+import { LinkTo } from "./Button";
 
 type Props = {
   className?: string;
   children?: React.ReactNode;
 };
+
+const INTERVAL_DELAY_MS = 750;
 
 export const Flashy: React.FC<Props> = ({ className, children }) => {
   const [isFlash, setIsFlash] = useState(false);
@@ -14,7 +16,7 @@ export const Flashy: React.FC<Props> = ({ className, children }) => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setIsFlash((state) => !state);
-    }, 750);
+    }, INTERVAL_DELAY_MS);
     return () => clearInterval(intervalId);
   }, []);
 

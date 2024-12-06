@@ -1,0 +1,36 @@
+.btn {
+  background: transparent;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+
+  // def behaviour inside the flex-container, can be changed via props
+  align-self: center;
+
+  font-size: var(--font-text-l);
+  height: var(--btn-height-def);
+  padding: var(--padding-md);
+  border-radius: var(--border-radius-m);
+}
+
+.solid {
+  color: var(--color-secondary);
+  border: 1px solid var(--color-secondary);
+  justify-content: center;
+
+  &:hover {
+    background-color: var(--color-secondary-dark);
+    color: var(--color-primary);
+  }
+}
+
+.simple {
+  justify-content: center;
+  &:hover {
+    text-decoration: underline;
+    color: var(--color-secondary);
+  }
+}

@@ -1,5 +1,4 @@
-import Link from "next/link";
-import { LinkTo, Title, Flashy } from "@/components";
+import { Button, Title, Flashy } from "@/components";
 
 export default function NotFound() {
   return (
@@ -7,11 +6,13 @@ export default function NotFound() {
       <p style={{ fontSize: "150px" }}>🤖</p>
       <Title size="2xl">Page Not Found - 404</Title>
       <Flashy>
-        <LinkTo isBtn={false} href="/">
+        <Button variant="simple" href="/">
           Learn more about what status 404 is 😁
-        </LinkTo>
+        </Button>
       </Flashy>
-      <LinkTo href="/home">Return Home</LinkTo>
+      <Button variant="btn" href="/home">
+        Return Home
+      </Button>
     </div>
   );
 }

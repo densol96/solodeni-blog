@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-import { Logo, LinkTo, SearchBar, Container } from "@/components";
+import { Logo, Button, SearchBar, Container } from "@/components";
 
 import styles from "./Header.module.scss";
 const { header, header__content, header__nav, header__left } = styles;
@@ -21,10 +21,12 @@ export const Header: React.FC<Props> = ({ className, children }) => {
         </div>
 
         <nav className={header__nav}>
-          <LinkTo href="login" isBtn={false}>
+          <Button href="login" variant="simple">
             Log in
-          </LinkTo>
-          <LinkTo href="create-account">Create account</LinkTo>
+          </Button>
+          <Button variant="btn" href="create-account">
+            Create account
+          </Button>
         </nav>
       </Container>
     </header>

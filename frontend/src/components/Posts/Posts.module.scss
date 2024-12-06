@@ -1,0 +1,29 @@
+.toggler {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+  color: var(--color-text-light);
+
+  li {
+    cursor: pointer;
+  }
+}
+
+.options,
+.variations {
+  display: flex;
+  gap: 2rem;
+}
+
+.options {
+  font-size: 2rem;
+}
+
+.variations {
+  font-size: 1.8rem;
+}
+
+.active {
+  font-weight: 600;
+  color: var(--color-text-dark);
+}

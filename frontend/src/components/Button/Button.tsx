@@ -6,9 +6,10 @@ import clsx from "clsx";
 import styles from "./Button.module.scss";
 import Link from "next/link";
 
-const { btn, simple, solid } = styles;
+const { btn, simple, solid, sizeDefault, sizeLarge } = styles;
 
 type BtnType = "simple" | "btn";
+type SizeType = "default" | "large";
 
 type Props = {
   children: ReactNode | ReactNode[];
@@ -17,14 +18,32 @@ type Props = {
   onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
   className?: string;
   style?: object;
+  size?: SizeType;
 };
 
-export const Button: React.FC<Props> = ({ variant, children, href, onClick, className, style = {} }) => {
+export const Button: React.FC<Props> = ({
+  variant,
+  children,
+  href,
+  onClick,
+  className,
+  style = {},
+  size = "default",
+}) => {
   const props = {
-    ...{ className: clsx(btn, variant === "btn" && solid) },
-    ...{ className: clsx(btn, variant === "simple" && simple) },
+    ...{
+      className: clsx(
+        btn,
+        variant === "simple" && simple,
+        variant === "btn" && solid,
+        size === "default" && sizeDefault,
+        size === "large" && sizeLarge
+      ),
+    },
     ...(style && { style }),
   };
+
+  console.log(props);
 
   if (href) {
     return (

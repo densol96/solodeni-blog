@@ -9,8 +9,6 @@
 
   // def behaviour inside the flex-container, can be changed via props
   align-self: center;
-
-  font-size: var(--font-text-l);
   height: var(--btn-height-def);
   padding: var(--padding-md);
   border-radius: var(--border-radius-m);
@@ -31,6 +29,16 @@
   justify-content: center;
   &:hover {
     text-decoration: underline;
-    color: var(--color-secondary);
+    color: var(--color-secondary) !important;
+  }
+}
+
+.size {
+  &Default {
+    font-size: var(--font-text-l);
+  }
+
+  &Large {
+    font-size: var(--font-text-xl);
   }
 }

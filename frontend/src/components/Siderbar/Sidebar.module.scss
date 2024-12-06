@@ -1,21 +1,29 @@
-.li {
+.ul {
   display: flex;
-  align-items: center;
-  gap: 1rem;
-  font-size: 1.8rem;
-  padding: 0.5rem;
-  justify-content: flex-start !important;
+  flex-direction: column;
 
-  &:hover {
-    background-color: var(--color-secondary-light);
+  .li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.8rem;
+    padding: 0.5rem;
+    border-radius: var(--border-radius-m);
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--color-secondary-light);
+      color: var(--color-secondary);
+      text-decoration: underline;
+    }
+
+    .icon {
+      width: 3rem;
+      height: 3rem;
+    }
   }
 
-  .icon {
-    width: 3.2rem;
-    height: 3.2rem;
+  .modifyLink {
+    justify-content: flex-start;
   }
-}
-
-.modifyLink {
-  justify-content: flex-start;
 }

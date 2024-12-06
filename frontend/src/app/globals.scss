@@ -24,15 +24,19 @@
 
   --margin-xs: 1rem;
   --margin-sm: 1.5rem;
+  --margin-md: 3.2rem;
 
   --border-radius-sm: 3px;
   --border-radius-m: 6px;
+  --border-radius-l: 9px;
+  --border-radius-xl: 12px;
 
   --letter-spacing-sm: 0.2rem;
 
   --font-text-small: 1.5rem;
   --font-text-default: 1.6rem;
   --font-text-l: 1.8rem;
+  --font-text-xl: 2rem;
 
   --btn-height-def: 4.2rem;
 
@@ -109,6 +113,10 @@ ol {
 
 .mt-sm {
   margin-top: var(--margin-sm);
+}
+
+.mt-md {
+  margin-top: var(--margin-md);
 }
 
 .link {

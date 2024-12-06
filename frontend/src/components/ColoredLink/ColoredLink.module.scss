@@ -1,0 +1,9 @@
+.link {
+  font-size: inherit;
+
+  transition: color var(--transition-duration-fast);
+
+  &:hover {
+    color: var(--color-secondary);
+  }
+}

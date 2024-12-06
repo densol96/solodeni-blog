@@ -24,7 +24,7 @@ export const Header: React.FC<Props> = ({ className, children }) => {
           <Button href="login" variant="simple">
             Log in
           </Button>
-          <Button variant="btn" href="create-account">
+          <Button href="create-account" variant="btn">
             Create account
           </Button>
         </nav>

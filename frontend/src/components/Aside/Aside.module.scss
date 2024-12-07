@@ -1,0 +1,31 @@
+.description {
+  font-size: var(--font-text-xs);
+  color: var(--color-text-light);
+}
+
+.titleText {
+  color: inherit;
+}
+
+.comments {
+  color: var(--color-text-lightest);
+  font-size: var(--font-text-xs-plus);
+
+  &:hover {
+    // color: lighten(#444, 10%);
+  }
+}
+
+.item {
+  &:hover {
+    .comments {
+      color: lighten(#444, 10%);
+    }
+  }
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}

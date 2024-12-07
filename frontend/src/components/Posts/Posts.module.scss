@@ -30,10 +30,15 @@
 }
 
 // POSTS
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+}
 
 // POST
 .article {
-  border: 1px solid red;
+  // border: 1px solid red;
   padding: 2.5rem 4rem 2.5rem 4rem;
   .tags {
     display: inline-flex;

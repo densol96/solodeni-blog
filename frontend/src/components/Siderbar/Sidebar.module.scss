@@ -1,3 +1,13 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+
+  .sidebarWrapper {
+    padding: 0 0.5rem;
+  }
+}
+
 .ul {
   display: flex;
   flex-direction: column;

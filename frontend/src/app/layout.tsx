@@ -21,9 +21,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${roboto.className}`}>
         <Header />
-        <main style={{ border: "1px solid red" }} className="main">
-          {children}
-        </main>
+        <main className="main">{children}</main>
+        <Footer />
       </body>
     </html>
   );

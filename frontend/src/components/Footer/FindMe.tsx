@@ -3,12 +3,20 @@ import { GrLinkedin } from "react-icons/gr";
 import { IconWrapper, Title } from "@/components";
 
 import styles from "./Footer.module.scss";
+import { TitleSize } from "../Title/Title";
+import clsx from "clsx";
 const { footerText, footerFlex, footerFind } = styles;
 
-export const FindMe = () => {
+type Props = {
+  titleSize?: TitleSize;
+  titleMarginBottom?: string;
+  className?: string;
+};
+
+export const FindMe: React.FC<Props> = ({ titleSize = "sm", titleMarginBottom = "mb-xs", className }) => {
   return (
-    <div className={footerFind}>
-      <Title className="mb-xs" size="sm">
+    <div className={clsx(footerFind, className)}>
+      <Title className={titleMarginBottom} size={titleSize}>
         Get in touch with me!
       </Title>
       <div className={`${footerFlex}`}>

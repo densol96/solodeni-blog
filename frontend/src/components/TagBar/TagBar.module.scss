@@ -1,0 +1,8 @@
+.container {
+  .tagsContainer {
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+  }
+}

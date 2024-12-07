@@ -2,7 +2,10 @@ import React from "react";
 import { SideBarItem } from "./SideBarItem";
 
 import styles from "./Sidebar.module.scss";
-const { ul } = styles;
+import { TagBar } from "../TagBar/TagBar";
+import { FindMe } from "../Footer/FindMe";
+import clsx from "clsx";
+const { ul, container, sidebarWrapper } = styles;
 
 type Props = {
   className?: string;
@@ -11,7 +14,7 @@ type Props = {
 
 export const Sidebar: React.FC<Props> = ({ className, children }) => {
   return (
-    <nav className={className}>
+    <nav className={clsx(className, container)}>
       <ul className={ul}>
         <SideBarItem href="/home" name="Home" />
         <SideBarItem href="/about" name="About" />
@@ -21,6 +24,9 @@ export const Sidebar: React.FC<Props> = ({ className, children }) => {
         <SideBarItem className="mt-md" href="/conduct" name="Code of Conduct" />
         <SideBarItem href="/terms" name="Terms of use" />
       </ul>
+
+      <FindMe className={sidebarWrapper} titleMarginBottom="mb-xs" titleSize="xsplus" />
+      <TagBar className={sidebarWrapper} />
     </nav>
   );
 };

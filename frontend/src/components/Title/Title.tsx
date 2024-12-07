@@ -3,7 +3,7 @@ import styles from "./Title.module.scss";
 import clsx from "clsx";
 // const { title } = styles;
 
-type TitleSize = "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | "super";
+export type TitleSize = "xs" | "xsplus" | "sm" | "md" | "lg" | "xl" | "2xl" | "super";
 
 interface Props {
   size?: TitleSize;
@@ -14,6 +14,7 @@ interface Props {
 export const Title: React.FC<Props> = ({ size = "sm", className, children }) => {
   const mapTagBySize = {
     xs: "h5",
+    xsplus: "h5",
     sm: "h4",
     md: "h3",
     lg: "h2",

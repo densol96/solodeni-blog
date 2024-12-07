@@ -45,7 +45,7 @@ export const Post: React.FC<Props> = ({ className, children, post }) => {
       <article className={article}>
         <p className={dateTitle}>{formatDate(date)}</p>
         <ColoredLink isDark={true} href="/test">
-          <Title className="mb-sm" size="lg">
+          <Title className="mb-sm" size="md">
             Event-Driven Architecture for Clean React Component Communication
           </Title>
         </ColoredLink>
@@ -57,13 +57,13 @@ export const Post: React.FC<Props> = ({ className, children, post }) => {
         <footer className={footer}>
           <div className={footerLeft}>
             <Link href="article_id">
-              <p className={reactions}>
+              <div className={reactions}>
                 <p className={reactionIcons}>
                   <img className={reactionIcon} src="/icons/good.png" alt="Good icon" />
                   <img className={reactionIcon} src="/icons/bad.png" alt="Bad icon" />
                 </p>
                 {post.reactions} reactions
-              </p>
+              </div>
             </Link>
             <Link className="center" href="article_id">
               <p className={comments}>

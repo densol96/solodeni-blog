@@ -13,3 +13,4 @@ export {IconWrapper} from "./IconWrapper/IconWrapper";
 export {Flashy} from "./Button/Flashy";
 export {LineToggler} from "./Posts/PostFilter";
 export {Posts} from "./Posts/Posts";
+export {Tag} from "./Posts/Tag";

@@ -41,6 +41,34 @@ export const Posts: React.FC<Props> = ({ className, children }) => {
           minRead: 6,
         }}
       />
+      <Post
+        post={{
+          reactions: 459,
+          commentsTotal: 34,
+          minRead: 6,
+        }}
+      />
+      <Post
+        post={{
+          reactions: 459,
+          commentsTotal: 34,
+          minRead: 6,
+        }}
+      />
+      <Post
+        post={{
+          reactions: 459,
+          commentsTotal: 34,
+          minRead: 6,
+        }}
+      />
+      <Post
+        post={{
+          reactions: 459,
+          commentsTotal: 34,
+          minRead: 6,
+        }}
+      />
     </ul>
   );
 };

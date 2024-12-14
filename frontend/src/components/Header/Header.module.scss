@@ -13,11 +13,15 @@
   &__left {
     display: flex;
     gap: var(--gap-sm);
+    max-width: 70rem;
+    width: 100%;
+    display: flex;
   }
 
   &__content {
     display: flex;
     justify-content: space-between;
+    gap: 2rem;
   }
 
   &__nav {

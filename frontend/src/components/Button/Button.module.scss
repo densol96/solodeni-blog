@@ -3,10 +3,9 @@
   border: none;
   color: inherit;
   cursor: pointer;
-
   display: flex;
   align-items: center;
-
+  white-space: nowrap;
   // def behaviour inside the flex-container, can be changed via props
   align-self: center;
   height: var(--btn-height-def);

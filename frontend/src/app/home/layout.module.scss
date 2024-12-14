@@ -1,15 +1,17 @@
 .layout {
   // border: 1px solid green;
   display: grid;
-  grid-template-columns: 24rem 1fr 35rem;
+  grid-template-columns: auto 3fr 1.3fr;
   grid-gap: var(--gap-between);
+
+  @media (max-width: 1000px) {
+    grid-template-columns: 3fr 1.3fr;
+  }
 }
 
 .sidebar {
-  // position: sticky;
-  top: 8.4rem;
-  align-self: flex-start;
-  // border: 1px solid red;
+  // top: 8.4rem;
+  // align-self: flex-start;
 }
 
 .content {

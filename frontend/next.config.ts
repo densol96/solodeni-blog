@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
       {
         source: '/',
         destination: '/home',
-        permanent: true
+        permanent: false // true will change the browser behavior when requesting localhost:3000 in my case (during the dev - it is not what I want) 
       }
     ]
   }

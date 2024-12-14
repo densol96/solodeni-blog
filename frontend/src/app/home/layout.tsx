@@ -3,6 +3,7 @@ import style from "./layout.module.scss";
 import { Sidebar } from "@/components/Siderbar/Sidebar";
 import { cloneElement } from "react";
 import { Aside } from "@/components/Aside/Aside";
+import { SideBarStateProvider } from "@/context/SidebarContext";
 const { layout, sidebar, content, news } = style;
 
 export default function RootLayout({
@@ -12,7 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <Container className={layout}>
-      <Sidebar className={sidebar} />
+      <Sidebar />
       {cloneElement(children, { className: content })}
       <Aside className={news} />
     </Container>

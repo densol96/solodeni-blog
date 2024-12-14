@@ -4,6 +4,7 @@ import "./globals.scss";
 import { roboto } from "@/lib/fonts";
 import { Header } from "../components/Header/Header";
 import { Footer } from "../components/Footer/Footer";
+import { SideBarStateProvider } from "@/context/SidebarContext";
 
 export const metadata: Metadata = {
   title: "Tech with SoloDeni - Personal Blog",
@@ -18,12 +19,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${roboto.className}`}>
-        <Header />
-        <main className="main">{children}</main>
-        <Footer />
-      </body>
-    </html>
+    <SideBarStateProvider>
+      <html lang="en">
+        <body className={`${roboto.className}`}>
+          <Header />
+          <main className="main">{children}</main>
+          <Footer />
+        </body>
+      </html>
+    </SideBarStateProvider>
   );
 }

@@ -1,0 +1,28 @@
+.layout {
+  // border: 1px solid green;
+  display: grid;
+  grid-template-columns: auto 3fr 1.3fr;
+  grid-gap: var(--gap-between);
+
+  @media (max-width: 1000px) {
+    grid-template-columns: 3fr 1.3fr;
+  }
+
+  @media (max-width: 700px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.sidebar {
+  // Sidebar.module.scss (all css properties related to fixed modal window from the left)
+}
+
+.content {
+  // border: 1px solid pink;
+}
+
+.news {
+  @media (max-width: 700px) {
+    display: none;
+  }
+}

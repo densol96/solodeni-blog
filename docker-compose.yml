@@ -1,11 +1,11 @@
 services:
-  frontend-react-js:
-    build: ./frontend
+  app:
+    build: ./
     ports:
       - "3000:3000"
     volumes:
-      - ./frontend/src:/frontend/src
-      - /frontend/node_modules
+      - ./:/app/src
+      - /app/node_modules
     # environment:
     command:
       npm run dev
